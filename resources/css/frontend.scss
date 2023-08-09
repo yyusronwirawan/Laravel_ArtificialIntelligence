@@ -1,0 +1,198 @@
+@config "../../tailwind.site.config.js";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: "Oneset";
+	src: url("../../public/assets/fonts/OnestRegular1602-hint.woff") format('woff');
+	font-display: swap;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Oneset";
+	src: url("../../public/assets/fonts/OnestMedium1602-hint.woff") format('woff');
+	font-display: swap;
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: "Oneset";
+	src: url("../../public/assets/fonts/OnestBold1602-hint.woff") format('woff');
+	font-display: swap;
+	font-weight: 700;
+}
+
+@layer base {
+
+	:root {
+		--body-bg: #fafafc;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply font-oneset;
+		@apply text-heading;
+	}
+
+	h1,
+	h2,
+	h3 {
+		font-weight: 700;
+	}
+
+	h4,
+	h5,
+	h6 {
+		font-weight: 500;
+	}
+
+	h1 {
+		font-size: 84px;
+		line-height: 0.916em;
+		letter-spacing: -0.05em;
+	}
+
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		line-height: 1em;
+	}
+
+	h2 {
+		font-size: 53px;
+		letter-spacing: -0.03em;
+	}
+
+	h3 {
+		font-size: 39px;
+		line-height: 1.1;
+		letter-spacing: -0.03em;
+	}
+
+	h4 {
+		font-size: 18px;
+		letter-spacing: -0.01em;
+	}
+
+	h5 {
+		font-size: 16px;
+		letter-spacing: -0.01em;
+	}
+
+	h6 {
+		@apply font-golos;
+		font-size: 12px;
+		font-weight: 500;
+	}
+
+	@media (max-width: 767px) {
+
+		h1 {
+			font-size: 69px;
+		}
+	}
+
+	@media (max-width: 479px) {
+
+		h1 {
+			font-size: 16vw;
+		}
+
+		h1 svg {
+			width: 0.55em;
+		}
+	}
+}
+
+@layer components {
+
+	.dot {
+		display: inline-block;
+		@apply w-1;
+		@apply h-1;
+		@apply mx-1;
+		vertical-align: middle;
+		background-color: currentColor;
+		border-radius: 1em;
+		opacity: 0.4;
+	}
+
+	@media (max-width: 1199px) {
+
+		.container {
+			@apply px-4;
+		}
+	}
+}
+
+@layer utilities {
+	@keyframes gradient-animation {
+		0% {
+			background-position: 0% 100%;
+		}
+
+		50% {
+			background-position: 100% 100%;
+		}
+
+		100% {
+			background-position: 0% 100%;
+		}
+	}
+
+	.banner-bg {
+		background: linear-gradient(120deg,
+			rgb(112, 172, 212) 0%,
+			rgb(202, 113, 255) 20%,
+			rgb(132, 105, 204) 30%,
+			rgb(72, 130, 230) 50%,
+			rgb(132, 105, 204) 80%,
+			rgb(112, 172, 212) 100%);
+		background-size: 200% 200%;
+		animation: gradient-animation 20s ease infinite;
+	}
+}
+
+.page-loaded {
+
+	.banner-title {
+		color: #fff;
+
+		.lqd-split-text-words {
+			--tw-blur: blur(0px);
+			--tw-translate-x: 0 !important;
+			--tw-translate-y: 0 !important;
+			--tw-scale-x: 1;
+			--tw-scale-y: 1;
+			opacity: 1;
+		}
+
+		@for $i from 0 through 7 {
+			.lqd-split-text-words:nth-child(#{$i + 1}) {
+				transition-delay: ($i * 0.07) + s;
+			}
+		}
+	}
+
+	.banner-title-gradient {
+		transform: translate(100%, 50%);
+		transition: transform 3.5s 1s, opacity 0.3s 2.1s;
+		opacity: 0;
+	}
+}
+
+@media ( max-width: 575px ) {
+
+	h2 {
+		font-size: 35px;
+	}
+}

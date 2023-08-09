@@ -1,0 +1,29 @@
+{
+  "public/assets/fonts/OnestBold1602-hint.woff": {
+    "file": "assets/OnestBold1602-hint-07af822a.woff",
+    "src": "public/assets/fonts/OnestBold1602-hint.woff"
+  },
+  "public/assets/fonts/OnestMedium1602-hint.woff": {
+    "file": "assets/OnestMedium1602-hint-d0b88aa9.woff",
+    "src": "public/assets/fonts/OnestMedium1602-hint.woff"
+  },
+  "public/assets/fonts/OnestRegular1602-hint.woff": {
+    "file": "assets/OnestRegular1602-hint-95954259.woff",
+    "src": "public/assets/fonts/OnestRegular1602-hint.woff"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-59ab0ae1.css",
+    "isEntry": true,
+    "src": "resources/css/app.css"
+  },
+  "resources/css/frontend.scss": {
+    "file": "assets/frontend-a43d180c.css",
+    "isEntry": true,
+    "src": "resources/css/frontend.scss"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-9a25e63b.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  }
+}

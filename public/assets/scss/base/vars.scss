@@ -1,0 +1,69 @@
+:root {
+    --tblr-primary: #330582;
+    --tblr-primary-rgb: 51,5,130;
+    --tblr-green: #1ca685;
+    --tblr-green-rgb: 28,166,133;
+    --tblr-red: #a13d55;
+    --tblr-red-rgb: 161,61,85;
+    --tblr-body-bg: #fff;
+    --tblr-body-bg-rgb: 255,255,255;
+    --tblr-body-color: #474D59;
+    --tblr-card-border-color: #f1f3f4;
+	--tblr-border-color: rgb(0 0 0 / 5%);
+	--tblr-border-radius: 13px;
+    --tblr-font-size-h1: 2.0625rem;
+    --tblr-font-size-h2: 1.25rem;
+    --tblr-font-size-h3: 1rem;
+    --tblr-font-size-h4: 0.875rem;
+    --tblr-font-size-h5: 0.75rem;
+    --tblr-font-size-h6: 0.625rem;
+    --tblr-line-height-h1: 2rem;
+    --tblr-line-height-h2: 1.75rem;
+    --tblr-line-height-h3: 1.5rem;
+    --tblr-line-height-h4: 1.25rem;
+    --tblr-line-height-h5: 1rem;
+    --tblr-line-height-h6: 1rem;
+
+	--tblr-success: var(--tblr-green);
+	--tblr-success-rgb: 28,166,133;
+	--tblr-danger: var(--tblr-red);
+	--tblr-danger-rgb: 161,61,85;
+	--tblr-muted: #667085;
+
+	--tblr-nav-link-font-size: 0.875rem;
+
+	--tblr-dark-mode-border-color: rgb(255 255 255 / 4%);
+
+	--lqd-header-search-bg: #f2f2f4;
+	--lqd-header-search-color: rgba(37, 44, 50, 0.5);
+	--lqd-header-search-color-focus: #000;
+	--lqd-heading-color: #000;
+	--lqd-heading-color-rgb: 0,0,0;
+    --lqd-header-height: 4.8125rem;
+	--lqd-vertical-nav-link-color: #565B67;
+	--lqd-shadow-color: rgb(29 39 59 / 7%);
+	--lqd-shadow-xs: 0 2px 1px var(--lqd-shadow-color);
+	--lqd-faded-out: rgb(0 0 0 / 20%);
+	--lqd-faded-out-more: rgb(0 0 0 / 7%);
+}
+
+.theme-dark  {
+    --tblr-primary: #9a34cd;
+    --tblr-primary-rgb: 154,52,205;
+	--tblr-body-bg: #1a1d23;
+	--tblr-body-bg-rgb: 26,29,35;
+	--tblr-bg-surface: transparent;
+	--tblr-navbar-bg: transparent;
+
+	--lqd-header-search-bg: #232528;
+	--lqd-header-search-color: #808797;
+	--lqd-header-search-color-focus: #fff;
+	--lqd-heading-color: #fff;
+	--lqd-heading-color-rgb: 255,255,255;
+	--lqd-faded-out: rgb(255 255 255 / 20%);
+	--lqd-faded-out-more: rgb(255 255 255 / 7%);
+
+	--tblr-bg-surface: #1f2228;
+
+	background-color: var(--tblr-body-bg);
+}

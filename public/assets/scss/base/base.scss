@@ -1,0 +1,13 @@
+body {
+	overflow-y: auto;
+}
+
+hr {
+	margin: 0.65rem 0;
+	border-color: var(--tblr-border-color);
+	opacity: 1;
+}
+
+.border-bottom {
+	border-color: var(--tblr-border-color) !important;
+}

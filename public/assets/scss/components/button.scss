@@ -1,0 +1,18 @@
+.btn {
+	--tblr-btn-padding-x: 1rem;
+	--tblr-btn-padding-y: 0.45rem;
+	--tblr-btn-border-width: 0;
+	--tblr-btn-border-radius: calc(var(--tblr-btn-padding-y) + 1em);
+	--tblr-btn-box-shadow: var(--lqd-shadow-xs);
+	--tblr-btn-font-size: 0.875rem;
+	transition: all 0.3s;
+
+	.page-auth & {
+		--tblr-btn-padding-y: 0.857rem;
+		--tblr-btn-font-size: 1.07rem;
+	}
+	&:hover {
+		transform: translateY(-3px);
+		--tblr-btn-box-shadow: var(--tblr-box-shadow);
+	}
+}

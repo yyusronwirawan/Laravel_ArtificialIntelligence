@@ -1,0 +1,51 @@
+@config "../../tailwind.app.config.js";
+
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--tw-content: '';
+	--tw-backdrop-blur: ;
+	--tw-backdrop-brightness: ;
+	--tw-backdrop-contrast: ;
+	--tw-backdrop-grayscale: ;
+	--tw-backdrop-hue-rotate: ;
+	--tw-backdrop-invert: ;
+	--tw-backdrop-opacity: ;
+	--tw-backdrop-saturate: ;
+	--tw-backdrop-sepia: ;
+	--tw-translate-x: 0;
+	--tw-translate-y: 0;
+	--tw-rotate: 0;
+	--tw-skew-x: 0;
+	--tw-skew-y: 0;
+	--tw-scale-x: 1;
+	--tw-scale-y: 1;
+}
+
+@layer components {
+
+
+	.text-heading {
+		--tw-text-opacity: 1;
+		color: rgba(var(--lqd-heading-color-rgb), var(--tw-text-opacity));
+	}
+}
+
+@layer utilities {
+	.collapse {
+		visibility: unset;
+	}
+
+	.form-select {
+		padding: 1em 1.23em;
+		font-size: 0.8125rem;
+		line-height: 1.4285714286;
+		border: var(--tblr-border-width) solid var(--tblr-border-color);
+		border-radius: var(--tblr-border-radius);
+	}
+
+	[dir=rtl] .form-select {
+		background-position: left 0.5rem center;
+	}
+}
